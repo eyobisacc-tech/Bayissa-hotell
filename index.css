@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream-50 text-brown-800 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl text-brown-800 font-semibold tracking-wide;
+  }
+  .section-subtitle {
+    @apply text-gold-500 font-sans text-sm uppercase tracking-[0.2em] mb-3;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold-400 text-white font-semibold rounded-sm transition-all duration-300 hover:bg-gold-500 hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-gold-400 text-gold-600 font-semibold rounded-sm transition-all duration-300 hover:bg-gold-400 hover:text-white;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] text-white font-semibold rounded-sm transition-all duration-300 hover:bg-[#1da851] hover:shadow-lg;
+  }
+}
